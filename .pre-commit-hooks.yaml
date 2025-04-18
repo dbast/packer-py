@@ -1,7 +1,8 @@
-- id: shellcheck
-  name: shellcheck
-  description: Test shell scripts with shellcheck
-  entry: shellcheck
-  language: python
-  types: [shell]
-  require_serial: true # shellcheck can detect sourcing this way
+  - id: packer-fmt
+    name: Packer Format
+    description: Rewrites HCL2 Packer config files to canonical format
+    entry: packer fmt
+    args: [-recursive, .]
+    language: python
+    files: \.pkr(?:vars)?\.hcl$
+    pass_filenames: false

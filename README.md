@@ -1,23 +1,10 @@
-[![build status](https://github.com/shellcheck-py/shellcheck-py/actions/workflows/main.yml/badge.svg)](https://github.com/shellcheck-py/shellcheck-py/actions/workflows/main.yml)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/shellcheck-py/shellcheck-py/main.svg)](https://results.pre-commit.ci/latest/github/shellcheck-py/shellcheck-py/main)
+[![build status](https://github.com/dbast/packer-py/actions/workflows/main.yml/badge.svg)](https://github.com/dbast/packer-py/actions/workflows/main.yml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/dbast/packer-py/main.svg)](https://results.pre-commit.ci/latest/github/dbast/packer-py/main)
 
-# shellcheck-py
+# packer-py
 
-A python wrapper to provide a pip-installable [shellcheck] binary.
-
-Internally this package provides a convenient way to download the pre-built
-shellcheck binary for your particular platform.
-
-### installation
-
-```bash
-pip install shellcheck-py
-```
-
-### usage
-
-After installation, the `shellcheck` binary should be available in your
-environment (or `shellcheck.exe` on windows).
+A [pre-commit] [packer] hook. This provides a convenient way to download the pre-built
+packer binary for your particular platform and use it via pre-commit hook.
 
 ### As a pre-commit hook
 
@@ -26,11 +13,11 @@ See [pre-commit] for instructions
 Sample `.pre-commit-config.yaml`:
 
 ```yaml
--   repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.10.0.1
+-   repo: https://github.com/dbast/packer-py
+    rev: v1.11.2.1
     hooks:
-    -   id: shellcheck
+    -   id: packer
 ```
 
-[shellcheck]: https://shellcheck.net
+[packer]: https://developer.hashicorp.com/packer
 [pre-commit]: https://pre-commit.com
