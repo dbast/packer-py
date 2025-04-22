@@ -4,8 +4,9 @@
     "config:recommended",
     "helpers:pinGitHubActionDigestsToSemver"
   ],
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": [
         "^setup\\.cfg$"
       ],
