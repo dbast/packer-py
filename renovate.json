@@ -10,7 +10,7 @@
         "^setup\\.cfg$"
       ],
       "matchStrings": [
-        "\\[update_settings\\]\\s*\\n(?:[^\\n]*\\n)*?^\\s*depname\\s*=\\s*(?<depName>.*?)\\s*\\n(?:[^\\n]*\\n)*?^\\s*datasource\\s*=\\s*(?<datasource>.*?)\\s*\\n(?:[^\\n]*\\n)*?^\\s*version\\s*=\\s*(?<currentValue>.*?)\\s*$"
+        "\\[update_settings\\]\\s*depname\\s*=\\s*(?<depName>.*?)\\s*datasource\\s*=\\s*(?<datasource>.*?)\\s*version\\s*=\\s*(?<currentValue>.*?)\\s*$"
       ],
       "depNameTemplate": "{{depName}}",
       "datasourceTemplate": "{{datasource}}",
