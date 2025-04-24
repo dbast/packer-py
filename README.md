@@ -14,7 +14,7 @@ Sample `.pre-commit-config.yaml`:
 
 ```yaml
 -   repo: https://github.com/dbast/packer-py
-    rev: v1.11.2.1
+    rev: 1.11.2.1
     hooks:
     -   id: packer-fmt
 ```
