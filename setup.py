@@ -7,6 +7,7 @@ try:
 except ImportError:
     cmdclass = {}
 else:
+
     class bdist_wheel(orig_bdist_wheel):
         def finalize_options(self):
             orig_bdist_wheel.finalize_options(self)
@@ -16,8 +17,8 @@ else:
         def get_tag(self):
             _, _, plat = orig_bdist_wheel.get_tag(self)
             # We don't contain any python source, nor any python extensions
-            return 'py2.py3', 'none', plat
+            return "py2.py3", "none", plat
 
-    cmdclass = {'bdist_wheel': bdist_wheel}
+    cmdclass = {"bdist_wheel": bdist_wheel}
 
 setup(cmdclass=cmdclass)
